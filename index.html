@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercado José</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    header {
+      background: #ffd600;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #222;
+    }
+
+    .buscador {
+      margin-top: 15px;
+      padding: 12px;
+      width: 90%;
+      max-width: 450px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .producto {
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .producto h2 {
+      font-size: 18px;
+    }
+
+    .precio {
+      font-size: 20px;
+      font-weight: bold;
+      color: #008000;
+    }
+
+    button {
+      background: #3483fa;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🛒 Mercado José</h1>
+    <input class="buscador" type="text" placeholder="¿Qué estás buscando?">
+  </header>
+
+  <section class="productos">
+
+    <div class="producto">
+      <h2>Saphirus</h2>
+      <p>Producto aromatizante</p>
+      <p class="precio">$0</p>
+      <button>Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <h2>Matafuegos</h2>
+      <p>Venta y recarga</p>
+      <p class="precio">$0</p>
+      <button>Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <h2>Limpieza para autos</h2>
+      <p>Productos para tu vehículo</p>
+      <p class="precio">$0</p>
+      <button>Agregar al carrito</button>
+    </div>
+
+  </section>
+
+</body>
+</html>
